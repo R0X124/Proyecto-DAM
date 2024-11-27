@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Contenedor para un usuario -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Imagen del usuario -->
+        <ImageView
+            android:id="@+id/imageViewRol"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/usuario" />
+
+        <!-- Nombre Completo -->
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Nombre Completo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@id/imageViewRol"
+            app:layout_constraintTop_toTopOf="@id/imageViewRol"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Correo Electrónico -->
+        <TextView
+            android:id="@+id/textViewCorreo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Correo Electrónico"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/textViewNombre"
+            app:layout_constraintTop_toBottomOf="@id/textViewNombre"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Rol del Usuario -->
+        <TextView
+            android:id="@+id/textViewRol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rol"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textColor="@android:color/holo_blue_dark"
+            app:layout_constraintStart_toStartOf="@id/textViewCorreo"
+            app:layout_constraintTop_toBottomOf="@id/textViewCorreo"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

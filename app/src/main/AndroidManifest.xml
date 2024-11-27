@@ -16,16 +16,28 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".profesor.AgregarNotasProfesorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profesor.ListaAlumnosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profesor.HorasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profesor.NotasProfesorActivity"
+            android:exported="false" />
+        <activity
             android:name=".profesor.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".profesor.pruebaactivity"
+            android:name=".profesor.HorarioActivity"
             android:exported="false" />
         <activity
             android:name=".HorarioProfesorActivity"
             android:exported="false" />
         <activity
-            android:name=".CursoProfesorActivity"
+            android:name=".profesor.CursoProfesorActivity"
             android:exported="false" />
         <activity
             android:name=".RegistrarHorarioActivity"

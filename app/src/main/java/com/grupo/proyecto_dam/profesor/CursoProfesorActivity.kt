@@ -1,19 +1,17 @@
-package com.grupo.proyecto_dam
+package com.grupo.proyecto_dam.profesor
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.grupo.proyecto_dam.AgregarCursoProfesorActivity
+import com.grupo.proyecto_dam.ProfesorActivity
 import com.grupo.proyecto_dam.data.adaptador.CursoAdaptador
 import com.grupo.proyecto_dam.data.api.CursoProfesorGet
 import com.grupo.proyecto_dam.data.model.CursoRequest
 import com.grupo.proyecto_dam.data.network.RetrofitClient
 import com.grupo.proyecto_dam.databinding.CursoprofesoractivityBinding
-import com.grupo.proyecto_dam.profesor.pruebaactivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -51,7 +49,7 @@ class CursoProfesorActivity : AppCompatActivity() {
         }
 
         binding.exitCursoButton.setOnClickListener {
-            val intent = Intent(this,ProfesorActivity::class.java)
+            val intent = Intent(this, ProfesorActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -94,7 +92,7 @@ class CursoProfesorActivity : AppCompatActivity() {
     }
 
     private fun horario(curso: CursoRequest){
-        val intent = Intent(this, pruebaactivity::class.java)
+        val intent = Intent(this, HorasActivity::class.java)
         intent.putExtra("id", curso.id)
         /*intent.putExtra("nombre", curso.nombre)
         intent.putExtra("descripcion",curso.descripcion)

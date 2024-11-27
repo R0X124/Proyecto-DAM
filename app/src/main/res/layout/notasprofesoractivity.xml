@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="@android:color/white"
-    tools:context=".profesor.CursoProfesorActivity">
+    tools:context=".profesor.NotasProfesorActivity">
 
     <!-- Campo de texto para buscar -->
 
@@ -53,7 +53,7 @@
                 android:padding="8dp">
 
                 <ImageView
-                    android:id="@+id/btninscripcion"
+                    android:id="@+id/listaAlumnos"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
                     android:src="@drawable/cursos"
@@ -62,42 +62,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Inscribirse Curso"
+                    android:text="Lista de Alumnos"
                     android:textSize="12sp"
                     android:gravity="center"
                     android:textColor="#000000" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Botón VerCursos -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="80dp"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <ImageView
-                    android:id="@+id/btnhorario"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/cursos"
-                    app:tint="#000000" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Asignar Horario"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -117,7 +85,7 @@
                 android:padding="8dp">
 
                 <ImageView
-                    android:id="@+id/exitCursoButton"
+                    android:id="@+id/buttonSalirprofesor"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
                     android:src="@drawable/cursos"

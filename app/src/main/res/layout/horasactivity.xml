@@ -7,7 +7,7 @@
     android:padding="16dp"
     android:background="@android:color/white"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".profesor.pruebaactivity">
+    tools:context=".profesor.HorasActivity">
 
     <!-- Spinner para seleccionar el día -->
     <TextView

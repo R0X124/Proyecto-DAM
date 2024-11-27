@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".profesor.AgregarNotasProfesorActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Notas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo Nota T1 -->
+    <EditText
+        android:id="@+id/editTextNotaT1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nota T1"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Campo Examen Parcial -->
+    <EditText
+        android:id="@+id/editTextExamenParcial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Examen Parcial"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editTextNotaT1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Campo Nota T2 -->
+    <EditText
+        android:id="@+id/editTextNotaT2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nota T2"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editTextExamenParcial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Campo Examen Final -->
+    <EditText
+        android:id="@+id/editTextExamenFinal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Examen Final"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editTextNotaT2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        />
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/buttonGuardarNotas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar Notas"
+        app:layout_constraintTop_toBottomOf="@id/editTextExamenFinal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonSalirNotas"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Botón Salir -->
+    <Button
+        android:id="@+id/buttonSalirNotas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        app:layout_constraintTop_toBottomOf="@id/editTextExamenFinal"
+        app:layout_constraintStart_toEndOf="@id/buttonGuardarNotas"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

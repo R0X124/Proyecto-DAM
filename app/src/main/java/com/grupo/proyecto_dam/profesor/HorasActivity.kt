@@ -7,29 +7,23 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.grupo.proyecto_dam.CursoProfesorActivity
-import com.grupo.proyecto_dam.ProfesorActivity
 import com.grupo.proyecto_dam.R
 import com.grupo.proyecto_dam.data.api.CursoHorarioPut
 import com.grupo.proyecto_dam.data.model.CursoRequest
-import com.grupo.proyecto_dam.data.model.UserRequest
 import com.grupo.proyecto_dam.data.network.RetrofitClient
-import com.grupo.proyecto_dam.databinding.PruebaactivityBinding
+import com.grupo.proyecto_dam.databinding.HorasactivityBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class pruebaactivity : AppCompatActivity() {
-
-    private lateinit var binding: PruebaactivityBinding
+class HorasActivity : AppCompatActivity() {
+    private lateinit var binding: HorasactivityBinding
     private lateinit var cursohorarioput: CursoHorarioPut
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = PruebaactivityBinding.inflate(layoutInflater)
+        binding = HorasactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         cursohorarioput = RetrofitClient.instance.create(CursoHorarioPut::class.java)
@@ -64,13 +58,14 @@ class pruebaactivity : AppCompatActivity() {
 
     private fun agregarparteCurso(curso: CursoRequest) {
         // Realiza la llamada al endpoint utilizando Retrofit
-        cursohorarioput.agregarHorario(curso.id,curso.dia,curso.horaInicio,curso.horaFin).enqueue(object : Callback<CursoRequest> {
+        cursohorarioput.agregarHorario(curso.id,curso.dia,curso.horaInicio,curso.horaFin).enqueue(object :
+            Callback<CursoRequest> {
             override fun onResponse(call: Call<CursoRequest>, response: Response<CursoRequest>) {
                 if (response.isSuccessful && response.body() != null) {
                     // Si la respuesta es exitosa y contiene datos
                     val curso = response.body()
                     Log.d("horario", "${response.body()}")
-                    Toast.makeText(this@pruebaactivity, "Horario agregado exitosamente: ${curso?.dia}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@HorasActivity, "Horario agregado exitosamente: ${curso?.dia}", Toast.LENGTH_SHORT).show()
                 } else {
                     // Si la respuesta no es exitosa (error en el servidor)
                     val errorBody = response.errorBody()?.string()
@@ -80,13 +75,13 @@ class pruebaactivity : AppCompatActivity() {
                         "Error: $errorBody"
                     }
                     Log.e("prueba","${response}")
-                    Toast.makeText(this@pruebaactivity, errorMessage, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@HorasActivity, errorMessage, Toast.LENGTH_SHORT).show()
                 }
             }
 
             override fun onFailure(call: Call<CursoRequest>, t: Throwable) {
                 // Si ocurre un error de red o en la llamada HTTP
-                Toast.makeText(this@pruebaactivity, "Error de red: ${t.localizedMessage}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@HorasActivity, "Error de red: ${t.localizedMessage}", Toast.LENGTH_LONG).show()
             }
         })
     }
