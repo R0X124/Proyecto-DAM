@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nombre del curso -->
+    <TextView
+        android:id="@+id/txt_nombre_curso_detalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Curso"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Tabla de evaluaciones -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3"
+        android:layout_marginTop="16dp">
+
+        <!-- Cabecera de la tabla -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evaluación"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota"
+                android:textStyle="bold"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- Filas de la tabla -->
+        <TableRow>
+            <TextView
+                android:text="T1"
+                android:padding="8dp" />
+            <TextView
+                android:text="TRABAJO 1"
+                android:padding="8dp" />
+            <TextView
+                android:text="10%"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/nota_t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:padding="8dp"
+                android:hint="00" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="EP"
+                android:padding="8dp" />
+            <TextView
+                android:text="EVALUACIÓN PARCIAL"
+                android:padding="8dp" />
+            <TextView
+                android:text="20%"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/nota_ep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:padding="8dp"
+                android:hint="00" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="T2"
+                android:padding="8dp" />
+            <TextView
+                android:text="TRABAJO 2"
+                android:padding="8dp" />
+            <TextView
+                android:text="30%"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/nota_t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:padding="8dp"
+                android:hint="00" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="EF"
+                android:padding="8dp" />
+            <TextView
+                android:text="EXAMEN FINAL"
+                android:padding="8dp" />
+            <TextView
+                android:text="40%"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/nota_ef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:padding="8dp"
+                android:hint="00" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Promedio Final -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_promedio_final_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Promedio Final:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_promedio_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Botón Simular Promedio -->
+    <Button
+        android:id="@+id/btn_simular_promedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simular promedio"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón Atrás (inicialmente invisible) -->
+    <Button
+        android:id="@+id/btn_atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrás"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F5F5F5">
+
+        <!-- Texto de cabecera -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redes Sociales"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:paddingBottom="16dp" />
+
+        <!-- Contenedor de LinkedIn -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <!-- Logo de LinkedIn -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_linkedin"
+                android:contentDescription="LinkedIn Logo" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <!-- Botón de LinkedIn -->
+            <Button
+                android:id="@+id/btn_linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LinkedIn Universidad" />
+
+        </LinearLayout>
+
+        <!-- Contenedor de Instagram -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <!-- Logo de Instagram -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_instagram"
+                android:contentDescription="Instagram Logo" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <!-- Botón de Instagram -->
+            <Button
+                android:id="@+id/btn_instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagram Universidad" />
+
+        </LinearLayout>
+
+        <!-- Contenedor de Facebook -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <!-- Logo de Facebook -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_facebook"
+                android:contentDescription="Facebook Logo" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <!-- Botón de Facebook -->
+            <Button
+                android:id="@+id/btn_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook Universidad" />
+
+        </LinearLayout>
+
+        <!-- Contenedor de Twitter -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <!-- Logo de Twitter -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_twitter"
+                android:contentDescription="Twitter Logo" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <!-- Botón de Twitter -->
+            <Button
+                android:id="@+id/btn_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twitter Universidad" />
+
+        </LinearLayout>
+
+        <!-- Contenedor de YouTube -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <!-- Logo de YouTube -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_youtube"
+                android:contentDescription="YouTube Logo" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <!-- Botón de YouTube -->
+            <Button
+                android:id="@+id/btn_youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YouTube Universidad" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

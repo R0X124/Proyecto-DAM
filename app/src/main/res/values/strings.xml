@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Proyecto-DAM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string-array name="roles_array">
+        <item>ALUMNO</item>
+        <item>PROFESOR</item>
+        <item>ADMINISTRADOR</item>
+    </string-array>
+
+    <string-array name="dia_array">
+        <item>LUNES</item>
+        <item>MARTES</item>
+        <item>MIERCOLES</item>
+        <item>JUEVES</item>
+        <item>VIERNES</item>
+        <item>SABADO</item>
+        <item>DOMINGO</item>
+    </string-array>
+</resources>

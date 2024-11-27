@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Texto Principal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Principal"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- TextView y Rectángulo de Cursos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cursos"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/rectangulo_cursos"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:onClick="abrirFragmentCursos">
+        </LinearLayout>
+
+        <!-- TextView y Rectángulo de Anuncios -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anuncios"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/rectangulo_anuncios"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:onClick="abrirFragmentAnuncios">
+        </LinearLayout>
+
+        <!-- TextView y Rectángulo de Eventos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eventos"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/rectangulo_eventos"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:onClick="abrirFragmentEventos">
+        </LinearLayout>
+
+        <!-- TextView y Rectángulo de Servicios -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servicios"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:gravity="center">
+
+            <!-- Contenedor de Botones en Horizontal -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Botón de Pagos -->
+                <LinearLayout
+                    android:id="@+id/btn_pagos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="abrirFragmentPagos">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_pagos_icono"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pagos"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Botón de Inscripciones -->
+                <LinearLayout
+                    android:id="@+id/btn_inscripciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:onClick="abrirFragmentInscripciones">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_inscripciones_icono"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inscripción"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

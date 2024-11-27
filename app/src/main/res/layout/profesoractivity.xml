@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfesorActivity">
+
+    <!-- Barra de herramientas -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarProfesor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="4dp"
+        android:title="Dashboard Profesor"
+        android:titleTextColor="@android:color/white">
+
+        <!-- Texto de bienvenida dinámico -->
+        <TextView
+            android:id="@+id/welcomeProfesor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingEnd="16dp"
+            android:text="Bienvenido -nombre-"
+            android:textColor="@android:color/white" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Contenedor ScrollView para el contenido principal -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarProfesor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- Texto y botón de Cursos Asignados -->
+            <TextView
+                android:id="@+id/cursosText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cursos"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cursosButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/cursosIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cursos" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Texto y botón de Subir Notas -->
+            <TextView
+                android:id="@+id/notasText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notas"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/horarioButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/notasIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cursos" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Texto y botón de Publicar Anuncio -->
+            <TextView
+                android:id="@+id/anuncioText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publicar Anuncio"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/anuncioButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/anuncioIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cursos" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Botón de Salir -->
+            <Button
+                android:id="@+id/exitButtonProfesor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salir"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

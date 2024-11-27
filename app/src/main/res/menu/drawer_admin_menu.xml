@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_users"
+        android:icon="@drawable/usuario"
+        android:title="Usuarios" />
+    <item
+        android:id="@+id/nav_courses"
+        android:icon="@drawable/cursos"
+        android:title="Cursos" />
+    <item
+        android:id="@+id/nav_grades"
+        android:icon="@drawable/academico"
+        android:title="Grados Académicos" />
+</menu>

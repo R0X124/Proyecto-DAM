@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:background="@drawable/rounded_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nombre del curso -->
+        <TextView
+            android:id="@+id/txt_nombre_curso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del curso"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Nombre del docente -->
+        <TextView
+            android:id="@+id/txt_nombre_docente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Docente: Nombre del docente"
+            android:textSize="16sp" />
+
+        <!-- Nota total del curso -->
+        <TextView
+            android:id="@+id/txt_nota_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota Total: 0"
+            android:textSize="16sp" />
+
+        <!-- Enlace para ver detalles del curso -->
+        <TextView
+            android:id="@+id/txt_ver_detalles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver detalles del curso"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Enlace para ver participantes del curso -->
+        <TextView
+            android:id="@+id/txt_ver_participantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver participantes del curso"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
